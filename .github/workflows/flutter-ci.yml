@@ -54,7 +54,8 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.4'
+          flutter-version: '3.16.4'  # Use the latest stable version
+          cache: true  # Enables caching for faster builds
 
       - name: Install Dependencies
         run: flutter pub get
